@@ -1,12 +1,31 @@
-<h2>Visualizaciones</h2>
-
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem; margin: 1rem 0;">
-  <figure>
-    <img src="librosleídos.svg" alt="Libros leídos" style="width:100%; height:auto;">
-    <figcaption>Gráfico de barras: libros leídos y puntajes.</figcaption>
-  </figure>
-  <figure>
-    <img src="planoana.svg" alt="Plano Ana" style="width:100%; height:auto;">
-    <figcaption>Gráfico de burbujas: autores, géneros y puntajes.</figcaption>
-  </figure>
-</div>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Visualización - Libros leídos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 40px;
+      background-color: #fafafa;
+    }
+    h1 {
+      color: #333;
+    }
+    .grafico {
+      margin-top: 20px;
+    }
+    svg {
+      max-width: 90%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>Visualización: Algunos de los libros que leí</h1>
+  <div class="grafico">
+    <img src="librosleidos.svg" alt="Gráfico de libros leídos">
+  </div>
+</body>
+</html>
