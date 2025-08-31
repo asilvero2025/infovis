@@ -14,22 +14,22 @@
       text-align: center;
     }
 
-    /* Estilo para el SVG local */
-    .local-svg {
+    /* SVG incrustado */
+    svg {
       width: 100%;
-      max-width: 600px; /* tamaño más contenido */
-      height: auto;
+      max-width: 800px; /* controla ancho máximo */
+      height: auto; /* mantiene proporción */
       display: block;
-      margin: 20px auto; /* centra y separa del título */
+      margin: 20px auto; /* centra y separa */
       border: 1px solid #ccc;
     }
 
-    /* Estilo para la visualización de Flourish */
+    /* Flourish */
     .flourish-embed {
       width: 100%;
-      max-width: 600px;  /* achicado */
-      height: 400px;      /* altura reducida */
-      margin: 30px auto;  /* separa del SVG y centra */
+      max-width: 600px; /* más pequeño */
+      height: 400px;
+      margin: 30px auto;
       display: block;
     }
   </style>
@@ -40,15 +40,12 @@
   <h2>¿Qué libros me gustaron más y a qué género pertenecen?</h2>
 
   <h2>Gráfico de barras (SVG)</h2>
-  <!-- SVG local -->
-  <object type="image/svg+xml" data="file:///C:/Users/asilvero/Downloads/gr%C3%A1ficorawgraph.svg" class="local-svg"></object>
+  <!-- SVG incrustado directamente -->
+  <svg xmlns="http://www.w3.org/2000/svg" width="1100" height="500">
+    <!-- COPIAR TODO EL CONTENIDO DEL SVG LOCAL AQUÍ -->
+  </svg>
 
-  <h2>¿Qué autores me gustaron más y qué puntaje les di?</h2>
+  <h2>Otra visualización</h2>
+  <!-- Flourish nuevo -->
   <div class="flourish-embed flourish-chart" data-src="visualisation/24907026">
-    <script src="https://public.flourish.studio/resources/embed.js"></script>
-    <noscript>
-      <img src="https://public.flourish.studio/visualisation/24907026/thumbnail" width="100%" alt="chart visualization" />
-    </noscript>
-  </div>
-</body>
-</html>
+    <script s
