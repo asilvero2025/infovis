@@ -8,12 +8,28 @@
   <h1>Módulo 4</h1>
   <h2>¿Qué libros me gustaron más y a qué género pertenecen?</h2>
 
-  <!-- Gráfico estático en SVG -->
+  <!-- Gráfico estático en SVG incrustado -->
   <h2>Gráfico de barras (SVG)</h2>
-  <object type="image/svg+xml" 
-          data="https://raw.githubusercontent.com/asilvero2025/infovis/main/gr%C3%A1ficorawgraph.svg" 
-          width="800" height="600">
-  </object>
+
+  <svg xmlns="http://www.w3.org/2000/svg" width="1100" height="500">
+    <rect width="1100" height="500" x="0" y="0" fill="#FFFFFF" id="background"/>
+    <g id="viz">
+      <g transform="translate(0,0)">
+        <g transform="translate(180,20)">
+          <g class="bars">
+            <rect id="undefined - Seda" x="0" y="81.9982136021437" height="26.002296797243847" width="568" fill="#2ca02c"/>
+            <rect id="undefined - Paris-Austerlitz" x="0" y="270.9991068010719" height="26.002296797243847" width="639" fill="#2ca02c"/>
+            <rect id="undefined - En lo más implacable de la noche" x="0" y="378.9996172004594" height="26.002296797243847" width="710" fill="#9467bd"/>
+            <rect id="undefined - Tokio Blues (Norwegian Wood)" x="0" y="108.99834120199057" height="26.002296797243847" width="568" fill="#2ca02c"/>
+            <rect id="undefined - Tuya" x="0" y="135.99846880183745" height="26.002296797243847" width="568" fill="#d62728"/>
+            <rect id="undefined - Una suerte pequeña" x="0" y="162.99859640168435" height="26.002296797243847" width="568" fill="#2ca02c"/>
+            <!-- Aquí sigue el resto de las barras -->
+          </g>
+        </g>
+      </g>
+    </g>
+  </svg>
 
 </body>
 </html>
+
