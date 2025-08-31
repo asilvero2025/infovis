@@ -4,33 +4,46 @@
   <meta charset="UTF-8">
   <title>Módulo 4 - Visualizaciones</title>
   <style>
-    svg {
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      line-height: 1.5;
+    }
+
+    h1, h2 {
+      text-align: center;
+    }
+
+    /* Estilo para el SVG local */
+    .local-svg {
       width: 100%;
-      max-width: 1100px;
+      max-width: 600px; /* tamaño más contenido */
       height: auto;
       display: block;
-      margin: 0 auto;
+      margin: 20px auto; /* centra y separa del título */
       border: 1px solid #ccc;
     }
 
+    /* Estilo para la visualización de Flourish */
     .flourish-embed {
       width: 100%;
-      max-width: 800px;
-      margin: 30px auto;
-      height: 500px;
+      max-width: 600px;  /* achicado */
+      height: 400px;      /* altura reducida */
+      margin: 30px auto;  /* separa del SVG y centra */
+      display: block;
     }
   </style>
 </head>
 <body>
   <h1>Módulo 4</h1>
+
   <h2>¿Qué libros me gustaron más y a qué género pertenecen?</h2>
 
   <h2>Gráfico de barras (SVG)</h2>
-  <svg xmlns="http://www.w3.org/2000/svg" width="1100" height="500">
-    <!-- ... tu código SVG aquí ... -->
-  </svg>
+  <!-- SVG local -->
+  <object type="image/svg+xml" data="file:///C:/Users/asilvero/Downloads/gr%C3%A1ficorawgraph.svg" class="local-svg"></object>
 
-  <h2>Otra visualización</h2>
+  <h2>¿Qué autores me gustaron más y qué puntaje les di?</h2>
   <div class="flourish-embed flourish-chart" data-src="visualisation/24907026">
     <script src="https://public.flourish.studio/resources/embed.js"></script>
     <noscript>
