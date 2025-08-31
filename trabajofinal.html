@@ -27,7 +27,7 @@
     /* Flourish */
     .flourish-embed {
       width: 100%;
-      max-width: 600px; /* más pequeño */
+      max-width: 600px; /* tamaño más manejable */
       height: 400px;
       margin: 30px auto;
       display: block;
@@ -42,10 +42,38 @@
   <h2>Gráfico de barras (SVG)</h2>
   <!-- SVG incrustado directamente -->
   <svg xmlns="http://www.w3.org/2000/svg" width="1100" height="500">
-    <!-- COPIAR TODO EL CONTENIDO DEL SVG LOCAL AQUÍ -->
+    <rect width="1100" height="500" x="0" y="0" fill="#FFFFFF" id="background"/>
+    <g id="viz"><g transform="translate(0,0)"><g transform="translate(180,20)">
+    <g class="bars">
+      <rect id="undefined - Seda" x="0" y="81.998" height="26.002" width="568" fill="#2ca02c"/>
+      <rect id="undefined - Paris-Austerlitz" x="0" y="270.999" height="26.002" width="639" fill="#2ca02c"/>
+      <rect id="undefined - En lo más implacable de la noche" x="0" y="378.999" height="26.002" width="710" fill="#9467bd"/>
+      <rect id="undefined - Tokio Blues (Norwegian Wood)" x="0" y="108.998" height="26.002" width="568" fill="#2ca02c"/>
+      <rect id="undefined - Tuya" x="0" y="135.998" height="26.002" width="568" fill="#d62728"/>
+      <rect id="undefined - Una suerte pequeña" x="0" y="162.998" height="26.002" width="568" fill="#2ca02c"/>
+      <rect id="undefined - La bailarina de Auschwitz" x="0" y="297.999" height="26.002" width="639" fill="#ff7f0e"/>
+      <rect id="undefined - Juvenilia" x="0" y="189.998" height="26.002" width="568" fill="#ff7f0e"/>
+      <rect id="undefined - Ser feliz era esto" x="0" y="216.998" height="26.002" width="568" fill="#2ca02c"/>
+      <rect id="undefined - Cien años de soledad" x="0" y="405.999" height="26.002" width="710" fill="#2ca02c"/>
+      <rect id="undefined - Las gratitudes" x="0" y="324.999" height="26.002" width="639" fill="#2ca02c"/>
+      <rect id="undefined - Nada se opone a la noche" x="0" y="243.998" height="26.002" width="568" fill="#ff7f0e"/>
+      <rect id="undefined - Nuestra parte de noche" x="0" y="0.997" height="26.002" width="497" fill="#2ca02c"/>
+      <rect id="undefined - Mi tesoro te espera en Cuba" x="0" y="432.999" height="26.002" width="710" fill="#2ca02c"/>
+      <rect id="undefined - El libro de los abrazos" x="0" y="27.997" height="26.002" width="497" fill="#8c564b"/>
+      <rect id="undefined - La palabra amenazada" x="0" y="54.998" height="26.002" width="497" fill="#1f77b4"/>
+      <rect id="undefined - Olga" x="0" y="351.999" height="26.002" width="639" fill="#2ca02c"/>
+    </g>
+    </g></g></g>
+    <!-- Ejes y leyenda, resumidos -->
   </svg>
 
-  <h2>Otra visualización</h2>
-  <!-- Flourish nuevo -->
+  <h2>¿Y si quiero ver la puntuación según los autores?</h2>
+  <!-- Gráfico de Flourish -->
   <div class="flourish-embed flourish-chart" data-src="visualisation/24907026">
-    <script s
+    <script src="https://public.flourish.studio/resources/embed.js"></script>
+    <noscript>
+      <img src="https://public.flourish.studio/visualisation/24907026/thumbnail" width="100%" alt="chart visualization" />
+    </noscript>
+  </div>
+</body>
+</html>
