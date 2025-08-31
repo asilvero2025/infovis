@@ -4,16 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ahora veamos con Flourish...</title>
+  <style>
+    .flourish-container {
+      transform: scale(0.7);      /* Escala el gráfico al 70% del tamaño original */
+      transform-origin: top left; /* Mantiene la posición en la esquina superior izquierda */
+      width: 100%;
+      overflow: hidden;
+    }
+  </style>
 </head>
 <body>
 
-  <div class="flourish-embed flourish-bubble-chart" data-src="visualisation/24909007" style="width:100%; height:200px;">
-    <script src="https://public.flourish.studio/resources/embed.js"></script>
-    <noscript>
-      <img src="https://public.flourish.studio/visualisation/24909007/thumbnail" width="100%" alt="bubble-chart visualization" />
-    </noscript>
+  <div class="flourish-container">
+    <div class="flourish-embed flourish-bubble-chart" data-src="visualisation/24909007" style="width:100%; height:600px;">
+      <script src="https://public.flourish.studio/resources/embed.js"></script>
+      <noscript>
+        <img src="https://public.flourish.studio/visualisation/24909007/thumbnail" width="100%" alt="bubble-chart visualization" />
+      </noscript>
+    </div>
   </div>
 
 </body>
 </html>
+
+
 
