@@ -11,15 +11,6 @@
       margin: 0;
       padding: 20px;
     }
-    h1 {
-      margin-bottom: 10px;
-    }
-    h2 {
-      margin-top: 0;
-      margin-bottom: 20px;
-      font-weight: normal;
-      color: #333;
-    }
     .chart {
       display: flex;
       justify-content: center;
@@ -27,20 +18,29 @@
   </style>
 </head>
 <body>
-  <h1>Módulo 4</h1>
-  <h2>¿Qué libros me gustaron más y qué puntaje les di?</h2>
   <div class="chart">
-    <!-- SVG incrustado -->
-    <svg xmlns="http://www.w3.org/2000/svg" width="1100" height="500">
-      <rect width="1100" height="500" x="0" y="0" fill="#FFFFFF" id="background"/>
-      <g id="viz">
-        <g transform="translate(0,0)">
-          <g transform="translate(180,20)">
-            <g class="bars">
-              <rect id="undefined - Seda" x="0" y="81.9982136021437" height="26.002296797243847" width="568" fill="#2ca02c"/>
-              <rect id="undefined - Paris-Austerlitz" x="0" y="270.9991068010719" height="26.002296797243847" width="639" fill="#2ca02c"/>
-              <rect id="undefined - En lo más implacable de la noche" x="0" y="378.9996172004594" height="26.002296797243847" width="710" fill="#9467bd"/>
-              <rect id="undefined - Tokio Blues (Norwegian Wood)" x="0" y="108.99834120199057" height="26.002296797243847" width="568" fill="#2ca02c"/>
-              <rect id="undefined - Tuya" x="0" y="135.99846880183745" height="26.002296797243847" width="568" fill="#d62728"/>
-              <rect id="undefined - Una suerte pequeña" x="0" y="162.99859640168435" height="26.002296797243847" width="568" fill="#2ca02c"/>
-              <rect id="undefined - La bailarina de Auschwitz" x="0" y="297.999234
+    <svg xmlns="http://www.w3.org/2000/svg" width="1100" height="600">
+      <!-- Título dentro del SVG -->
+      <text x="550" y="30" font-size="28" text-anchor="middle" fill="black" font-weight="bold">Módulo 4</text>
+      <text x="550" y="60" font-size="18" text-anchor="middle" fill="black">¿Qué libros me gustaron más y qué puntaje les di?</text>
+
+      <!-- Fondo y gráfico existente -->
+      <rect width="1100" height="500" x="0" y="100" fill="#FFFFFF" id="background"/>
+      <g id="viz" transform="translate(0,100)">
+        <g transform="translate(180,20)">
+          <g class="bars">
+            <rect id="undefined - Seda" x="0" y="81.9982136021437" height="26.002296797243847" width="568" fill="#2ca02c"/>
+            <rect id="undefined - Paris-Austerlitz" x="0" y="270.9991068010719" height="26.002296797243847" width="639" fill="#2ca02c"/>
+            <rect id="undefined - En lo más implacable de la noche" x="0" y="378.9996172004594" height="26.002296797243847" width="710" fill="#9467bd"/>
+            <rect id="undefined - Tokio Blues (Norwegian Wood)" x="0" y="108.99834120199057" height="26.002296797243847" width="568" fill="#2ca02c"/>
+            <rect id="undefined - Tuya" x="0" y="135.99846880183745" height="26.002296797243847" width="568" fill="#d62728"/>
+            <rect id="undefined - Una suerte pequeña" x="0" y="162.99859640168435" height="26.002296797243847" width="568" fill="#2ca02c"/>
+            <rect id="undefined - La bailarina de Auschwitz" x="0" y="297.9992344009188" height="26.002296797243847" width="639" fill="#ff7f0e"/>
+            <rect id="undefined - Juvenilia" x="0" y="189.99872400153123" height="26.002296797243847" width="568" fill="#ff7f0e"/>
+            <rect id="undefined - Ser feliz era esto" x="0" y="216.9988516013781" height="26.002296797243847" width="568" fill="#2ca02c"/>
+            <rect id="undefined - Cien años de soledad" x="0" y="405.9997448003063" height="26.002296797243847" width="710" fill="#2ca02c"/>
+            <rect id="undefined - Las gratitudes" x="0" y="324.9993620007657" height="26.002296797243847" width="639" fill="#2ca02c"/>
+            <rect id="undefined - Nada se opone a la noche" x="0" y="243.99897920122498" height="26.002296797243847" width="568" fill="#ff7f0e"/>
+            <rect id="undefined - Nuestra parte de noche" x="0" y="0.9978308026030334" height="26.002296797243847" width="496.99999999999994" fill="#2ca02c"/>
+            <rect id="undefined - Mi tesoro te espera en Cuba" x="0" y="432.9998724001532" height="26.002296797243847" width="710" fill="#2ca02c"/>
+            <rect id="undefined - El libro de los abrazos" x="0" y="27.997958402449918" height="26.002296797243847" width="496.999999999999
