@@ -5,23 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ahora veamos con Flourish...</title>
   <style>
-    /* Opción: centrar el gráfico si es más pequeño */
+    /* Centrar el gráfico y que ocupe todo el ancho disponible */
     .flourish-embed {
+      display: block;
+      width: 100%;
+      height: 600px; /* altura mayor para que se vea grande */
       margin: 0 auto;
     }
 
-    /* Limitar altura en pantallas pequeñas */
+    /* Responsivo: en pantallas muy pequeñas reducimos un poco la altura */
     @media (max-width: 768px) {
       .flourish-embed {
-        height: 300px !important;
+        height: 400px !important;
       }
     }
   </style>
 </head>
 <body>
 
-  <!-- Este contenedor se ajusta automáticamente -->
-  <div class="flourish-embed flourish-bubble-chart" data-src="visualisation/24909007" data-height="300">
+  <!-- Contenedor del gráfico Flourish -->
+  <div class="flourish-embed flourish-bubble-chart" data-src="visualisation/24909007">
     <script src="https://public.flourish.studio/resources/embed.js"></script>
     <noscript>
       <img src="https://public.flourish.studio/visualisation/24909007/thumbnail" width="100%" alt="bubble-chart visualization" />
